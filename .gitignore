@@ -29,5 +29,6 @@ lerna-debug.log*
 
 
 # production
+dist/
 bundle.main.js
 bundle.main.js.map

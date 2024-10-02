@@ -1,13 +1,11 @@
 {
-  "name": "my-app",
+  "name": "node-rust-api",
   "scripts": {
-    "post-install": "cd node_modules/@bunvader/rustacean && npm i && npm run build",
     "dev": "tsx watch src/index.ts",
     "build": "node esbuild.config.cjs",
-    "start": "node --max-old-space-size=512 bundle.main.js"
+    "start": "node --max-old-space-size=512 dist/bundle.main.js"
   },
   "dependencies": {
-    "@bunvader/rustacean": "^0.0.2",
     "@hono/node-server": "^1.13.1",
     "hono": "^4.6.3"
   },

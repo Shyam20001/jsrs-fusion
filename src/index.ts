@@ -1,6 +1,9 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
-import { fibonacci, sum } from '@bunvader/rustacean'  // my-module
+// Dynamically construct the path to the native module
+const path = require('path'); // Use require instead of import
+const nativeModulePath = path.join(__dirname, "../Reinforcements/@bunvader/rustacean");
+const { fibonacci, sum } = require(nativeModulePath); // Use require() for native module
 import { fibonacci2 } from './jsmod'
 
 

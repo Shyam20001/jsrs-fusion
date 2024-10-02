@@ -1,0 +1,10 @@
+F:\node-rust\jsrs\node_modules\@bunvader\rustacean\target\release\deps\napi_derive-d3bb944f38dd7ca5.dll: C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src/lib.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\compat_macro.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\mod.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\attrs.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand\napi.rs
+
+F:\node-rust\jsrs\node_modules\@bunvader\rustacean\target\release\deps\napi_derive-d3bb944f38dd7ca5.d: C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src/lib.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\compat_macro.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\mod.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\attrs.rs C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand\napi.rs
+
+C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src/lib.rs:
+C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\compat_macro.rs:
+C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand.rs:
+C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\mod.rs:
+C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\parser\attrs.rs:
+C:\Users\HP\.cargo\registry\src\index.crates.io-6f17d22bba15001f\napi-derive-2.16.12\src\expand\napi.rs:
