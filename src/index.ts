@@ -27,7 +27,7 @@ app.get('/node-js', async (c) => {
 // rust fn()s
 console.log(sum(2, 3))
 
-const port = 3000
+const port = process.env.PORT || 3000
 console.log(`Server is running on port ${port}`)
 
 serve({
