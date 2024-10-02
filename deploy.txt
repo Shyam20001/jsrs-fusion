@@ -1,0 +1,65 @@
+Sure! Here's a `Dockerfile` that sets up your Node.js server using Alpine Linux, ensuring it’s lightweight and optimized for production. This Dockerfile will follow the steps you've outlined, including installing dependencies, building the project, and copying necessary files.
+
+### Dockerfile
+
+```dockerfile
+# Use the official Node.js image based on Alpine
+FROM node:20-alpine AS builder
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application files
+COPY . .
+
+# Build the application
+RUN npm run build
+
+# Use a new stage to create a production image
+FROM node:20-alpine
+
+# Set the working directory for the production image
+WORKDIR /app
+
+# Copy built files and necessary directories from the builder stage
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/Reinforcements ./Reinforcements
+COPY --from=builder /app/package*.json ./
+
+# Install only production dependencies
+RUN npm install --omit=dev
+
+# Command to run the application
+CMD ["node", "--max-old-space-size=512", "dist/bundle.main.js"]
+```
+
+### Steps to Build and Run the Docker Container
+
+1. **Create the Dockerfile**: Create a file named `Dockerfile` in your project directory and paste the above content into it.
+
+2. **Build the Docker Image**:
+   Open your terminal, navigate to your project directory, and run:
+   ```bash
+   docker build -t node-rust-api .
+   ```
+
+3. **Run the Docker Container**:
+   Once the image is built, you can run it using:
+   ```bash
+   docker run -p 3000:3000 node-rust-api
+   ```
+   Adjust the port mapping (`-p 3000:3000`) according to the port your Node.js server listens on.
+
+### Additional Notes
+
+- **Alpine Image**: Using the `node:20-alpine` image keeps the image size small and improves startup time.
+- **Production Dependencies**: The `npm install --omit=dev` command ensures that only production dependencies are installed in the final image.
+- **Environment Variables**: If your application requires any environment variables, you can pass them using the `-e` flag in the `docker run` command.
+
+Let me know if you need any more help or adjustments!
